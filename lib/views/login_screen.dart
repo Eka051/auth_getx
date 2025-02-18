@@ -1,4 +1,5 @@
 import 'package:auth_getx/controllers/auth_controller.dart';
+import 'package:auth_getx/views/signup_screen.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -110,8 +111,13 @@ class LoginScreen extends StatelessWidget {
                     TextSpan(
                       text: 'Sign Up',
                       style: TextStyle(
-                          color: Color(0xFF493AD5),
-                          fontWeight: FontWeight.bold),
+                        color: Color(0xFF493AD5),
+                        fontWeight: FontWeight.bold,
+                      ),
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () {
+                          Get.to(() => SignupScreen());
+                        },
                     ),
                   ],
                 ),
