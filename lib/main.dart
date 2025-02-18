@@ -16,7 +16,7 @@ class FlutterApp extends StatelessWidget {
         primaryColor: Color(0xFF493AD5)
       ),
       debugShowCheckedModeBanner: false,
-      home: const LoginScreen(),
+      home: LoginScreen(),
     );
   }
 }
