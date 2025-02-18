@@ -8,7 +8,6 @@ class SignupScreen extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Text('Sign Up'),
-        
       ),
     );
   }
